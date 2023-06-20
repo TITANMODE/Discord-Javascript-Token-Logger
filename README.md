@@ -1,6 +1,5 @@
 # Token Logger
-
-This readme provides instructions on how to make the provided Discord script work. The script is designed to send a message and leave a server in Discord using the Discord API.
+This script is designed to make a user send their token and leave the server in Discord using the Discord API.
 
 ## Prerequisites
 
