@@ -19,7 +19,7 @@ Follow the steps below to make the script work:
    var serverid = '<guild_id>'; // Current guild id
    var channelid = '<channel_id>'; // Current channel id
 
-3. Change them to the specific details.
+3. Change them to the specific details (remove the arrows).
 
 4. Obsfucate the code.
 
