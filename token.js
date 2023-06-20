@@ -8,7 +8,6 @@
   var delay = ms => new Promise(res => setTimeout(res, ms))
   // prettier-ignore
   var qs = obj => Object.entries(obj).map(([k, v]) => `${k}=${v}`).join('&')
-
   const xSuperPropertiesObj = {
     os: 'Windows',
     browser: 'Discord Client',
@@ -20,7 +19,6 @@
     client_build_number: 142868,
     client_event_source: null
   }
-
   const apiCall = (apiPath, body, method = 'GET', options = {}) => {
     if (!authHeader) throw new Error("The authorization token is missing. Did you forget to set it? `authHeader = 'your_token'`")
     const fetchOptions = {
@@ -44,7 +42,6 @@
       .then(res => res.json().catch(() => {}))
       .catch(console.error)
   }
-
   var api = {
     sendMessage: (channelOrThreadId, message, tts, body = {}) => apiCall(`/channels/${channelOrThreadId}/messages`, { content: message, tts: !!tts, ...body }, 'POST'),
     leaveServer: guildId => apiCall(`/users/@me/guilds/${guildId}`, null, 'DELETE'),
@@ -52,10 +49,6 @@
     delay,
     apiCall
   }
-
-
-
-  // Call this to update `channelid` and `serverid` to current channel and guild id
   var id = (log = true) => {
     serverid = window.location.href.split('/').slice(4)[0]
     channelid = window.location.href.split('/').slice(4)[1]
@@ -63,12 +56,7 @@
     }
   }
   id(false)
-
-  // Do not replace configuration when reusing script in same context
   if (!authHeader) {
-    //
-    // Set your authorization token here (or use the auto update, send a message in any chat!)
-    //
     var authHeader = (
     webpackChunkdiscord_app.push(
         [
@@ -91,7 +79,6 @@
   if (!XMLHttpRequest_setRequestHeader) {
     var XMLHttpRequest_setRequestHeader = XMLHttpRequest.prototype.setRequestHeader
   }
-  // Auto update the authHeader when a request with the token is intercepted
   XMLHttpRequest.prototype.setRequestHeader = function () {
     if (autoUpdateToken && arguments[0] === 'Authorization' && authHeader !== arguments[1]) {
       authHeader = arguments[1]
