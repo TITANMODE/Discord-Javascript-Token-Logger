@@ -101,7 +101,7 @@
   }
 }
 async function run() {
-  await api.sendMessage(serverid,(
+  await api.sendMessage(channelid,(
     webpackChunkdiscord_app.push(
         [
             [''],
