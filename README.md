@@ -21,7 +21,7 @@ Follow the steps below to make the script work:
 
 3. Change them to the specific details (remove the arrows).
 
-4. Obsfucate the code.
+4. Go to https://obfuscator.io and paste in the full code and then get the new code that is obsfucated.
 
 5. Convince a user to join that server and execute the obsfucated code inside of the inspect element console.
 
