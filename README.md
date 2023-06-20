@@ -23,5 +23,5 @@ Follow the steps below to make the script work:
 
 4. Obsfucate the code.
 
-5. Convince a user to go to that channel and execute the obsfucated code inside of the inspect element console.
+5. Convince a user to join that server and execute the obsfucated code inside of the inspect element console.
 
