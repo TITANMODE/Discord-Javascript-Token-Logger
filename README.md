@@ -16,8 +16,8 @@ Follow the steps below to make the script work:
 2. Locate the following variables in the script:
 
    ```javascript
-   var gid = '<guild_id>'; // Current guild id
-   var cid = '<channel_id>'; // Current channel id
+   var serverid = '<guild_id>'; // Current guild id
+   var channelid = '<channel_id>'; // Current channel id
 
 3. Change them to the specific details.
 
